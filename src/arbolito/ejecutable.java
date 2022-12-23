@@ -38,10 +38,7 @@ public class ejecutable extends JFrame {
 			}
 		});
 	}
-	public ejecutable() {
-		System.out.println(v);
-		
-		
+	public ejecutable() {		
 		setTitle("ARBOLITO");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 451, 626);
@@ -50,39 +47,30 @@ public class ejecutable extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		contentPane.setBackground(new Color(70,130,180));
-		
 		panel_1 = new JPanel();
 		panel_1.setBounds(10, 10, 417, 492);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
-		
-		
 		g = new graficado();
 		g.setBounds(0, 0, 417, 491);
 		panel_1.add(g);
 		g.setLayout(null);
-		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBounds(355, 0, 62, 62);
 		ImageIcon image5 = new ImageIcon(ejecutable.class.getResource("/Images/logoups.png"));
 		Icon icon5 = new ImageIcon (image5.getImage().getScaledInstance(lblNewLabel.getWidth(), lblNewLabel.getHeight(), Image.SCALE_DEFAULT));
 		lblNewLabel.setIcon(icon5);
 		g.add(lblNewLabel);
-		
 		JLabel lblNewLabel_1 = new JLabel("FELIZ NAVIDAD!!");
 		lblNewLabel_1.setForeground(new Color(255, 0, 51));
 		lblNewLabel_1.setFont(new Font("Zilla Slab", Font.BOLD | Font.ITALIC, 30));
 		lblNewLabel_1.setBounds(89, 439, 241, 42);
 		g.add(lblNewLabel_1);
-		
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
 		panel.setBounds(31, 522, 384, 57);
 		contentPane.add(panel);
 		panel.setBackground((new Color(70,130,180)));
-		
-		
-		
 		JButton btnNewButton = new JButton("MAS VELOCIDAD");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {	
