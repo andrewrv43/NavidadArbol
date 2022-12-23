@@ -14,6 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
 
 public class ejecutable extends JFrame {
 	public graficado g=new graficado();
@@ -67,6 +68,12 @@ public class ejecutable extends JFrame {
 		Icon icon5 = new ImageIcon (image5.getImage().getScaledInstance(lblNewLabel.getWidth(), lblNewLabel.getHeight(), Image.SCALE_DEFAULT));
 		lblNewLabel.setIcon(icon5);
 		g.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("FELIZ NAVIDAD!!");
+		lblNewLabel_1.setForeground(new Color(255, 0, 51));
+		lblNewLabel_1.setFont(new Font("Zilla Slab", Font.BOLD | Font.ITALIC, 30));
+		lblNewLabel_1.setBounds(89, 439, 241, 42);
+		g.add(lblNewLabel_1);
 		
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
