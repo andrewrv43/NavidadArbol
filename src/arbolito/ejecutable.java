@@ -1,10 +1,7 @@
 package arbolito;
-
-
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Image;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -15,7 +12,6 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
-
 public class ejecutable extends JFrame {
 	public graficado g=new graficado();
 	private JPanel contentPane;
@@ -24,8 +20,6 @@ public class ejecutable extends JFrame {
 	private cambio h2;
 	private cambio h3;
 	private int v=0;
-	
-	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -92,7 +86,6 @@ public class ejecutable extends JFrame {
 		});
 		btnNewButton.setBounds(195, 10, 160, 37);
 		panel.add(btnNewButton);
-		
 		JButton btnNewButton_1 = new JButton("MENOS VELOCIDAD");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {		
@@ -110,7 +103,6 @@ public class ejecutable extends JFrame {
 			}
 		});
 		btnNewButton_1.setBounds(10, 10, 157, 37);
-		
 		panel.add(btnNewButton_1);
 	}
 }

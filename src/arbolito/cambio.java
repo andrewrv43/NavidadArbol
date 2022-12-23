@@ -1,8 +1,6 @@
 package arbolito;
-
 import java.awt.Color;
 import java.awt.Graphics;
-
 public class cambio extends Thread{
 	private ejecutable g;
 	public cambio(String n,ejecutable g) {
